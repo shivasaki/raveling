@@ -1,0 +1,148 @@
+html {
+    margin: auto;
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+body {
+    margin: auto;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+p, h1, h2, h3, h4, h5 {
+    margin: auto;
+}
+button {
+    padding:0;
+    border: none;
+}
+a {
+    text-decoration: none;
+}
+
+#app {
+    width: calc(100% - 48px);
+    box-sizing: border-box;
+    margin: auto;
+}
+.header {
+    height: 48px;
+    width: 100%;
+    text-align: center;
+    line-height: 48px;
+}
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.contents {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.contents img {
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.ranking {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.posting {
+    height: 45px;
+    width: 45px;
+    position: fixed;
+    bottom: 45px;
+    background: white;
+    border-radius: 100px; 
+    box-shadow: 1px 3px 3px rgba(1,1,1,0.3);
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.posting svg {
+    height: 27px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 10px;
+    width: 37px;
+    text-align: center;
+}
+
+.modal-background {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: -100;
+    opacity: 0;
+}
+.modal {
+}
+.post-button {
+    text-align: center;;
+}
+.post-button button{
+    height: 42px;
+    width: 160px;
+    border-radius: 100px;
+    margin: auto;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.modal-image{
+    margin-bottom: 15px;
+    height: 100%;
+}
+label > input {
+    display:none; /* アップロードボタンのスタイルを無効にする */
+    }
+.modal-text {
+    margin-bottom: 24px;
+}
+
+label {
+    height: 151px;
+    position: relative;
+    overflow: hidden;
+    }
+.modal-text input {
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px solid rgb(216, 216, 216);
+}
+.preview {
+    margin-bottom: 15px; 
+    height: auto;
+    z-index: 10;
+    width: 100%;
+}
+
+.image-button {
+    height: 25px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 3px;
+    width: 150px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+

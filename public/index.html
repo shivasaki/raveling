@@ -4,121 +4,89 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome to Firebase Hosting</title>
+  <link rel="icon" href="">
+  <link rel="stylesheet" href="/style.css">
+  <title>キョリカン</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="[]">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="fb:app_id" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:creator" content="">
+  <script defer src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script defer src="/__/firebase/7.3.0/firebase-app.js"></script>
   <script defer src="/__/firebase/7.3.0/firebase-auth.js"></script>
   <script defer src="/__/firebase/7.3.0/firebase-database.js"></script>
   <script defer src="/__/firebase/7.3.0/firebase-messaging.js"></script>
   <script defer src="/__/firebase/7.3.0/firebase-storage.js"></script>
   <script defer src="/__/firebase/init.js"></script>
-
-  <style media="screen">
-    body {
-      background: #ECEFF1;
-      color: rgba(0, 0, 0, 0.87);
-      font-family: Roboto, Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    #message {
-      background: white;
-      max-width: 360px;
-      margin: 100px auto 16px;
-      padding: 32px 24px;
-      border-radius: 3px;
-    }
-
-    #message h2 {
-      color: #ffa100;
-      font-weight: bold;
-      font-size: 16px;
-      margin: 0 0 8px;
-    }
-
-    #message h1 {
-      font-size: 22px;
-      font-weight: 300;
-      color: rgba(0, 0, 0, 0.6);
-      margin: 0 0 16px;
-    }
-
-    #message p {
-      line-height: 140%;
-      margin: 16px 0 24px;
-      font-size: 14px;
-    }
-
-    #message a {
-      display: block;
-      text-align: center;
-      background: #039be5;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: white;
-      padding: 16px;
-      border-radius: 4px;
-    }
-
-    #message,
-    #message a {
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    }
-
-    #load {
-      color: rgba(0, 0, 0, 0.4);
-      text-align: center;
-      font-size: 13px;
-    }
-
-    @media (max-width: 600px) {
-
-      body,
-      #message {
-        margin-top: 0;
-        background: white;
-        box-shadow: none;
-      }
-
-      body {
-        border-top: 16px solid #ffa100;
-      }
-    }
-  </style>
+  <script defer src="/script.js"></script>
 </head>
 
 <body>
-  <div id="message">
-    <h2>Welcome</h2>
-    <h1>Firebase Hosting Setup Complete</h1>
-    <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something
-      extraordinary!</p>
-    <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+  <div class="header">
+    <h3>Raveling</h3>
   </div>
-  <p id="load">Firebase SDK Loading&hellip;</p>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-      // // The Firebase SDK is initialized and available here!
-      //
-      // firebase.auth().onAuthStateChanged(user => { });
-      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-      // firebase.messaging().requestPermission().then(() => { });
-      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-      //
-      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  <div id="app">
+    <img src="" alt="" class="banner">
 
-      try {
-        let app = firebase.app();
-        let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-        document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-      } catch (e) {
-        console.error(e);
-        document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-      }
-    });
-  </script>
+    <div class="contents">
+      <p class="ranking">No.1</p>
+      <img class="banner" src="https://images-na.ssl-images-amazon.com/images/I/41CjxFAkH9L._SX352_BO1,204,203,200_.jpg"
+        alt="">
+      <p class="title">TITLE</p>
+    </div>
+  </div>
+
+  <div class="posting">
+    <?xml version="1.0" encoding="utf-8"?>
+    <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+    <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
+      xml:space="preserve">
+      <g>
+        <path d="M3.161,63.357c0.471,0,0.968-0.115,1.479-0.342l14.346-6.376c1.234-0.549,2.887-1.684,3.843-2.64L62,14.829
+                    c0.754-0.754,1.17-1.759,1.17-2.829S62.754,9.925,62,9.172l-7.172-7.173C54.074,1.246,53.07,0.831,52,0.831S49.926,1.246,49.172,2
+                    L9,42.171c-0.968,0.967-2.09,2.651-2.612,3.917L0.912,59.389c-0.594,1.444-0.174,2.42,0.129,2.873
+                    C1.507,62.958,2.28,63.357,3.161,63.357z M20,51.171C20,51.171,20,51.172,20,51.171L12.828,44L46,10.828L53.172,18L20,51.171zM52,4.828L59.172,12L56,15.172L48.828,8L52,4.828z M10.088,47.611c0.059-0.142,0.138-0.303,0.226-0.469l6.213,6.213L5.751,58.143
+                    L10.088,47.611z" />
+      </g>
+    </svg>
+  </div>
+
+  <div class="modal-background">
+
+  </div>
+
+  <div class="">
+    <label for="file_upload">
+      <div class="preview"></div>
+      <div class="modal-image"> <input type="file" id="file_upload"></div>
+    </label>
+
+    <div class="modal-text"><input type="text"></div>
+
+    <div class="post-button">
+      <button>
+        <p>投稿する</p>
+      </button>
+    </div>
+  </div>
 </body>
 
 </html>
